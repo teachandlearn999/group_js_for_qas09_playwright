@@ -1,0 +1,22 @@
+{
+  "name": "group_js_for_qas09_playwright",
+  "version": "1.0.0",
+  "description": "\"# playwrightProject\"",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teachandlearn999/playwrightProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teachandlearn999/playwrightProject/issues"
+  },
+  "homepage": "https://github.com/teachandlearn999/playwrightProject#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2"
+  }
+}
