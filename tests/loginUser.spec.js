@@ -2,8 +2,8 @@ import { test, expect } from "@playwright/test";
 import { text } from "stream/consumers";
 
 test("TC002_Login User with correct credentials", async ({ page }) => {
-  const myEmail = 'aabbasli2020@gmail.com'
-  const myPassword = 'peoRia$2020'
+  const myEmail = 'aabbasli2020@gmail.com';
+  const myPassword = 'peoRia$2020';
   
   await page.goto('https://automationexercise.com/');
   
