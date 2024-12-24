@@ -20,6 +20,6 @@ test.describe("login page tests", () => {
         await loginPage.fillPasswordField(loginData.loginPassword);
         await loginPage.clickLoginButton();
         const navElement = page.locator(".nav.navbar-nav");
-        await expect(navElement).toHaveText(/Logged in as/);
+        await expect(navElement).toHaveText("Logged in as");
 	});
 });
