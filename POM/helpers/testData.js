@@ -7,3 +7,6 @@ export const contactUsData = {
 };
 
 export const arrCategories = ["WOMEN", "MEN", "KIDS"];
+
+export const productItemSequence = 3;
+export const cartItemQuantity = "4";

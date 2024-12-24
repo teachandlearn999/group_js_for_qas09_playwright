@@ -4,17 +4,13 @@ class CartPage {
 	}
 
 	locators = {
-		getQuantityFie: () => this.page.locator(".cart_quantity button"),
+		getQuantityField: () => this.page.locator(".cart_quantity button"),
 	};
 
-    async getQuantity(Volue) {
-		await this.locators.getInputFieldName().fill(name);
-		return this;
+	async getQuantity() {
+		const fieldValue = await this.locators.getQuantityField().innerText();
+		return fieldValue;
 	}
-
-	
-
-	
 }
 
 export default CartPage;
