@@ -1,5 +1,6 @@
 import ContactUsPage from "./contactUsPage";
 import ProductsPage from "./productsPage";
+import LoginPage from "./loginPage";
 
 class Header {
 	constructor(page) {
@@ -10,6 +11,8 @@ class Header {
 		getHomePageLink: () => this.page.locator(".navbar-nav a[href='/']"),
 		getContactUsLink: () => this.page.getByText("Contact us"),
 		getProductsLink: () => this.page.getByText("Products"),
+		getSignupLoginLink: () => this.page.locator(".nav a[href='/login']"),
+		getLoggedInName: () => this.page.locator(".nav.navbar-nav li:last-child a")
 	};
 
 	async clickContactUsLink() {
@@ -21,6 +24,11 @@ class Header {
 		await this.locators.getProductsLink().click();
 		return new ProductsPage(this.page);
 	}
+
+	async clickSignupLogin() {
+		await this.locators.getSignupLoginLink().click();
+		return new LoginPage(this.page)
+	} 
 }
 
 export default Header;

@@ -3,8 +3,6 @@ class HomePage {
 		this.page = page;
 	}
 
-	locators = {};
-
 	async loadHomePage() {
 		await this.page.goto("/");
 	}
