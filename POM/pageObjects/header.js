@@ -11,7 +11,8 @@ class Header {
 		getHomePageLink: () => this.page.locator(".navbar-nav a[href='/']"),
 		getContactUsLink: () => this.page.getByText("Contact us"),
 		getProductsLink: () => this.page.getByText("Products"),
-		getSignupLoginLink: () => this.page.locator(".nav a[href='/login']")
+		getSignupLoginLink: () => this.page.locator(".nav a[href='/login']"),
+		getLoggedInName: () => this.page.locator(".nav.navbar-nav li:last-child a")
 	};
 
 	async clickContactUsLink() {

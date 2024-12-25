@@ -6,10 +6,12 @@ export const contactUsData = {
 		"Success! Your details have been submitted successfully.",
 };
 
+export const userName = "QAgroup09"
+
 export const loginData = {
 	loginEmail: "testqagroup09@email.com",
 	loginPassword: "Abc123",
-	loginName: "QAgroup09"
+	loggedInAsName: `Logged in as ${userName}`
 }
 
 export const arrCategories = ["WOMEN", "MEN", "KIDS"];
